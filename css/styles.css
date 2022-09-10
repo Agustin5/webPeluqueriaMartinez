@@ -164,6 +164,16 @@ section.serviciosUno{
     padding-left: 500px;
     line-height: 28px;
     margin-right: 10px;
+
+    animation-duration: 0.5s;
+    animation-name: movimientoServUno;
+}
+
+@keyframes movimientoServUno {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
 }
 
 
@@ -178,7 +188,18 @@ section.serviciosDos{
     padding-right: 500px;
     line-height: 28px;
     margin-left: 10px;
+
+    animation-duration: 0.5s;
+    animation-name: movimientoServDos;
 }
+
+@keyframes movimientoServDos {
+    from {
+      margin-right: 100%;
+      width: 300%
+    }
+}
+
 
 
 section.serviciosTres{
@@ -193,6 +214,16 @@ section.serviciosTres{
     padding-left: 500px;
     line-height: 28px;
     margin-right: 10px;
+
+    animation-duration: 0.5s;
+    animation-name: movimientoServTres;
+}
+
+@keyframes movimientoServTres {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
 }
 
 
@@ -207,6 +238,16 @@ section.serviciosCuatro{
     padding-right: 500px;
     line-height: 28px;
     margin-left: 10px;
+
+    animation-duration: 0.5s;
+    animation-name: movimientoServCuatro;
+}
+
+@keyframes movimientoServCuatro {
+    from {
+      margin-right: 100%;
+      width: 300%
+    }
 }
 
 
