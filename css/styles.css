@@ -80,6 +80,16 @@ article{
     line-height: 28px;
     margin-right: 500px;
     margin-left: 50px;
+
+    animation-duration: 3s;
+    animation-name: movimientoUno;
+}
+
+@keyframes movimientoUno {
+    from {
+      margin-right: 100%;
+      width: 300%
+    }
 }
 
 
@@ -96,9 +106,17 @@ article{
     line-height: 28px;
     margin-right: 50px;
     margin-left: 500px;
+
+    animation-duration: 3s;
+    animation-name: movimientoDos;
 }
 
-
+@keyframes movimientoDos {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+}
 footer{
     grid-area: redes;
     display: flex;
