@@ -9,58 +9,97 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
-    <title>AM Hair Desing</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>AM Hair Desing</title>
 </head>
-<body class="grid">
-    <header class="cabecera">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-              <a class="navbar-brand" href="./index.html">
-                <img id="logoWeb" src="./imagenes/Logo.png" alt="Logo de la web" width="100" height="100" ></a>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" href="./index.html">INCIO</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./servicios.html">SERVICIOS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"href="./nosostros.html">NOSOTROS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./nuestrotrabajos.html">NUESTROS TRABAJOS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./contacto.html">CONTACTOS</a>
-                  </li>
-                </ul>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-8">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid col-md-12 col-lg-2">
+                  <a class="navbar-brand" href="index.html">
+                    <img src="./imagenes/Logo.png" alt="logo de la web" class="logo">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">INICIO</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">SERVICIOS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="nuestrotrabajos.html">GALERIA</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">CONTACTO</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+          </div>
+        </div> 
+        <div class="row">
+            <div class="img-fluid">
+                <img src="./imagenes/galeria/peinadoRecogido.jpg" alt="" class="carrusel img-">
             </div>
-          </nav>
-    </header>
-    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="./imagenes/cortedepelo.jpg" class="carousel" alt="imagen de una persona cortando el peloa otra" >
-          </div>
-          <div class="carousel-item">
-            <img src="./imagenes/cortedepelo.jpg" class="carousel" alt="imagen de una persona cortando el peloa otra">
-          </div>
-          <div class="carousel-item">
-            <img src="./imagenes/cortedepelo.jpg" class="carousel" alt="imagen de una persona cortando el peloa otra">
-          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Quienes Somos</h1>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis obcaecati dignissimos culpa recusandae
+                    tenetur veritatis sequi, cumque, sapiente distinctio corrupti assumenda beatae? Quae, neque tenetur.
+                    Iste magnam saepe debitis eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+                    nesciunt eum non tempora, totam ut itaque tempore, possimus, vel ipsam commodi at error numquam rem
+                    soluta et saepe. Velit, pariatur.
+                </p>
+                <h1>Nuestras Sucursales</h1>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis obcaecati dignissimos culpa recusandae
+                    tenetur veritatis sequi, cumque, sapiente distinctio corrupti assumenda beatae? Quae, neque tenetur.
+                    Iste magnam saepe debitis eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+                    nesciunt eum non tempora, totam ut itaque tempore, possimus, vel ipsam commodi at error numquam rem
+                    soluta et saepe. Velit, pariatur.
+                </p>
+
+            </div>
+        </div>
+
+          <div class="col">
+            NOSOTROS
+          </div>
+          <div class="col">
+            GALERIA
+          </div>
+        
     </div>
+</body>
+
+
+<!-- <body class="grid">
+    <header>
+        <img id="logoWeb" src="./imagenes/Logo.png" alt="Logo de la web">
+            <ul class="menu" id="movimiento">
+                <li><a href="./index.html">INICIO</a></li>
+                <li><a href="./servicios.html">SERVICIOS</a></li>
+                <li><a href="./nosotros.html">NOSOTROS</a></li>
+                <li><a href="./nuestrotrabajos.html">NUESTROS TRABAJOS</a></li>
+                <li><a href="./contacto.html">CONTACTO</a></li>
+            </ul>
+    </header>
+    <article class="carrusel">
+        <img src="./imagenes/cortedepelo.jpg" alt="imagen de una persona cortando el peloa otra">
+    </article>
     <section class="servicios">
         <h1>Quienes Somos</h1>
         <p>
@@ -90,6 +129,6 @@
             <img id="facebook" src="./imagenes/logoFacebook.png" alt="logo de facebook">
         </a>
         <p>Derechos Reservados & Copy: 2022</p>
-    </footer>
+    </footer> -->
 </body>
 </html>

@@ -322,18 +322,17 @@ section.serviciosCuatro{
 }
 
 } */
+
+.logo{
+    width: 100px;
+    height: auto;
+}
+.carrusel{
+    max-width: 100%;
+    height: auto;
+}
    
 
-.cabecera{ 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.carousel{
-    display: flex;
-    width: 100%;
-    height: 700px;
-}
 
 
 
