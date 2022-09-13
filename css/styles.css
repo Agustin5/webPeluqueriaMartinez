@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0px;
     padding: 0px;
     font-family: 'Manrope', sans-serif;
@@ -321,8 +321,14 @@ section.serviciosCuatro{
     text-align: center;
 }
 
-}
+} */
    
+
+.cabecera{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
