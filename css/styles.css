@@ -327,11 +327,11 @@ section.serviciosCuatro{
     width: 100px;
     height: auto;
 }
-.carrusel{
-    max-width: 100%;
-    height: auto;
+.navbar-nav{
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
 }
-   
 
 
 
