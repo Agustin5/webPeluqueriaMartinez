@@ -7,51 +7,104 @@
     <link rel="shorcut icon" href="./imagnes/Logo.png">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
-    <title>AM HAIR DESING</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>AM Hair Desing</title>
 </head>
 <body>
-    <header id="tituloWeb">
-        <img id="logoWeb" src="./imagenes/Logo.png" alt="Logo de la web">
-        <nav>
-            <ul id="menu">
-                <li><a href="./index.html">INICIO</a></li>
-                <li><a href="./servicios.html">SERVICIOS</a></li>
-                <li><a href="./nosotros.html">NOSOTROS</a></li>
-                <li><a href="./nuestroTrabajos.html">NUESTROS TRABAJOS</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 col-lg-8">
+                <nav class="navbar navbar-expand-lg section-2 row bg-succes min-vw-100">
+                    <div class="container-fluid col-12 g-0">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="./imagenes/Logo.png" alt="logo de la web" class="logo">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">INICIO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="servicios.html">SERVICIOS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="nuestrotrabajos.html">GALERIA</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contacto.html">CONTACTO</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
     <section>
-        <h1>QUEREMOS ESCUCHARTE: </h1>
+        <label for="basic-url" class="form-label">Queremos Escucharte:</label>
         <br>
         <form name="miformulario" id="miformulario" method="get">
-            <input class="casilla" type="text" name="nombre"  placeholder="Ingrese su nombre">
+            <input type="text" class="form-control" placeholder="Nombre" aria-label="Username" aria-describedby="addon-wrapping">
             <br>
             <br>
-            <input class="casilla" type="text" name="apellido"  placeholder="Ingrese su apellido">
+            <input type="text" class="form-control" placeholder="Apellido" aria-label="Username" aria-describedby="addon-wrapping">
             <br>
             <br>
-            <input class="casilla" type="email" name="miemail" placeholder="Ingrese su email">
+            <input type="text" class="form-control" placeholder="Correo" aria-label="Username" aria-describedby="addon-wrapping">
             <br>
             <br>
-            <input class="casilla" type="text" name="mensaje" placeholder="Ingrese el mensaje">
+            <input type="text" class="form-control" placeholder="Whatsapp" aria-label="Username" aria-describedby="addon-wrapping">
             <br>
             <br>
-            <input type="submit" value="Enviar"> <input type="submit" value="Limpiar Formulario">
+            <input type="text" class="form-control" placeholder="Mensaje" aria-label="Username" aria-describedby="addon-wrapping">
     </section>
     <br>
-    <footer>
-        <p>Seguinos en nuestras redes: </p>
-        <a href="https://www.instagram.com/anamartine_z" target="_blank">
-            <img id="instagram" src="./imagenes/logoInstagram.jpg" alt="logo de instagram">
-        </a>
-        <a href="https://www.facebook.com/" target="_blank">
-            <img id="facebook" src="./imagenes/logoFacebook.png" alt="logo de facebook">
-        </a>
-        <p>Derechos Reservados & Copy: 2022</p>
-    </footer>
+    <footer class="text-center footer-style">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 footer-col">
+              <h3>Dirección</h3>
+              <p>
+                Mendoza-Argentina <br />
+                Sixto Videla Sur 000
+              </p>
+            </div>
+            <div class="col-md-4 footer-col">
+              <h3>Mis redes</h3>
+              <ul class="list-inline">
+                <li>
+                  <a target="_blank" href="https://www.instagram.com">
+                    <img id="instagram" src="./imagenes/instagram.png" alt="logo de instagram">
+                    INSTAGRAM
+                  </a>
+                <li>
+                <li>
+                  <a target="_blank" href="https://www.facebook.com">
+                    <img id="facebook" src="./imagenes/facebook-logo.png" alt="logo de facebook">
+                    FACEBOOK
+                  </a>
+                <li>
+              </ul>
+            </div>
+            <div class="col-md-4 footer-col">
+              <h3>Contacto</h3>
+              <p>
+                Whatsapp <br />
+                xxxx-xxxxxxx
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
 </body>
 </html>
