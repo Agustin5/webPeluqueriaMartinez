@@ -331,6 +331,19 @@ section.serviciosCuatro{
     position: absolute;
     left: 50%;
     transform: translatex(-50%);
+    padding: 2px 7px 2px 7px;
+    color: rgb(102, 102, 102);
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    
+
+    -webkit-border-radius: 10px ;
+    border-radius: 10px;
+}
+.navbar-nav:hover{
+    background-color: #00000021;
+    color: #ffffff;
 }
 
 .footer-style {
