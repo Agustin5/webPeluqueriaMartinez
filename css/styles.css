@@ -346,6 +346,11 @@ section.serviciosCuatro{
     color: #ffffff;
 }
 
+.container-fluid{
+    width: 100vw;
+    overflow-x:hidden ;
+}
+
 .footer-style {
     padding-top: 50px;
     background-color: #ffffff;
