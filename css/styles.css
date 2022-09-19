@@ -351,6 +351,21 @@ section.serviciosCuatro{
     overflow-x:hidden ;
 }
 
+.carousel-inner{
+    height: 65vh;
+}
+
+.carousel-item{
+    width:100px;
+    height:100%
+
+}
+ .imgs{
+     width: 100%;
+     height: 100%;
+} 
+
+
 .footer-style {
     padding-top: 50px;
     background-color: #ffffff;
