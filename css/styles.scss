@@ -1,0 +1,212 @@
+@import "./partials/mixins";
+@import "./partials/maps";
+@import "./partials/colores";
+@import "./partials/header";
+@import "./partials/sections";
+@import "./partials/footer";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gridServicios {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "imagenes imagenes imagenes"
+        "serviciosUno serviciosUno serviciosUno"
+        "serviciosDos serviciosDos serviciosDos"
+        "serviciosTres serviciosTres serviciosTres"
+        "serviciosCuatro serviciosCuatro serviciosCuatro"
+        "redes redes redes";
+    grid-template-rows: 1fr 2fr 3fr 3fr 3fr 3fr 1fr;
+    grid-template-columns: 20% auto 15%;
+    height: 100vh;
+    row-gap: 50px;
+}
+
+.serviciosUno {
+    grid-area: serviciosUno;
+    h1{
+        text-align: end;
+        margin-right: 10px;
+    }
+    p{
+        text-align: end;
+        padding-left: 500px;
+        line-height: 28px;
+        margin-right: 10px;
+    
+        animation-duration: 0.5s;
+        animation-name: movimientoServUno;
+    }
+}
+
+
+@keyframes movimientoServUno {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+}
+
+section.serviciosDos {
+    grid-area: serviciosDos;
+    h1{
+        text-align: start;
+        margin-left: 10px;
+        p{
+            padding-right: 500px;
+            line-height: 28px;
+            margin-left: 10px;
+        
+            animation-duration: 0.5s;
+            animation-name: movimientoServDos;
+        }
+    }
+}
+
+@keyframes movimientoServDos {
+    from {
+        margin-right: 100%;
+        width: 300%
+    }
+}
+
+section.serviciosTres {
+    grid-area: serviciosTres;
+    h1{
+        text-align: end;
+        margin-right: 10px;
+    }
+    p{
+        text-align: end;
+        padding-left: 500px;
+        line-height: 28px;
+        margin-right: 10px;
+    
+        animation-duration: 0.5s;
+        animation-name: movimientoServTres;
+    }
+}
+
+@keyframes movimientoServTres {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+}
+
+section.serviciosCuatro {
+    grid-area: serviciosCuatro;
+    h1{
+        text-align: start;
+        margin-left: 10px;
+    }
+    p{
+        padding-right: 500px;
+        line-height: 28px;
+        margin-left: 10px;
+    
+        animation-duration: 0.5s;
+        animation-name: movimientoServCuatro;
+    }
+}
+
+@keyframes movimientoServCuatro {
+    from {
+        margin-right: 100%;
+        width: 300%
+    }
+}
+
+@media screen and (max-width:481px) {
+    .grid {
+        grid-template-areas:
+            "header"
+            "imagenes"
+            "servicios"
+            "sucursales"
+            "redes";
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: 1fr;
+        height: 100vh;
+        row-gap: 20px;
+    }
+
+    .servicios h1 {
+        text-align: center;
+        margin-left: 190px;
+        p{
+            text-align: center;
+            margin-right: 50px;
+        }
+        h1{
+            text-align: center;
+        }
+    }
+    .sucursales p {
+        text-align: center;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .gridServicios {
+        grid-template-areas:
+            "header"
+            "imagenes"
+            "serviciosUno"
+            "serviciosDos"
+            "serviciosTres"
+            "serviciosCuatro"
+            "redes";
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-columns: 1fr;
+        height: 100vh;
+        row-gap: 20px;
+    }
+
+    .serviciosUno h1,
+    .serviciosDos h1,
+    .serviciosTres h1,
+    .serviciosCuatro h1 {
+        text-align: center;
+    }
+
+    .serviciosUno p,
+    .serviciosTres p {
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    .serviciosDos p,
+    .serviciosCuatro p {
+        padding-right: 0px;
+        text-align: center;
+    }
+} 

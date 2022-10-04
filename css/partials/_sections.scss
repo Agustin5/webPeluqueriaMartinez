@@ -1,0 +1,77 @@
+article {
+    grid-area: imagenes;
+}
+
+.carrusel{
+    img {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    }
+}
+
+.servicios {
+    grid-area: servicios;
+    flex-flow: row wrap;
+    display: flex;
+    h1{
+        text-align: start;
+        margin-left: 50px;
+    }
+    p{ 
+        text-align: start;
+        line-height: 28px;
+        margin-right: 500px;
+        margin-left: 50px;
+    
+        animation-duration: 3s;
+        animation-name: movimientoUno;
+    }
+}
+
+@keyframes movimientoUno {
+    from {
+        margin-right: 100%;
+        width: 300%
+    }
+}
+
+
+.sucursales {
+    grid-area: sucursales;
+    flex-flow: row wrap;
+    h1{
+        text-align: end;
+        margin-right: 50px;
+    }
+    p{
+        text-align: end;
+        line-height: 28px;
+        margin-right: 50px;
+        margin-left: 500px;
+    
+        animation-duration: 3s;
+        animation-name: movimientoDos;
+    }
+}
+
+@keyframes movimientoDos {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+}
+.grid {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "imagenes imagenes imagenes"
+        "servicios servicios servicios"
+        "sucursales sucursales sucursales"
+        "redes redes redes";
+    grid-template-rows: 1fr 2fr 3fr 3fr 1fr;
+    grid-template-columns: 20% auto 15%;
+    height: 100vh;
+    column-gap: 10px;
+    row-gap: 10px;
+}

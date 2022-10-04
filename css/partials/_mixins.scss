@@ -1,0 +1,6 @@
+@mixin pruebaUl ($tamano, $justificacion) {
+    display: flex;
+    list-style-type: none;
+    width: $tamano;
+    justify-content: $justificacion;
+}

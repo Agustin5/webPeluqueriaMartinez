@@ -1,0 +1,25 @@
+footer {
+    grid-area: redes;
+    display: block;
+    justify-content: center;
+    align-items:center;
+    img{
+        display: flex;
+        width: 16px;
+        height: 16px;
+    }
+}
+.grid {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "imagenes imagenes imagenes"
+        "servicios servicios servicios"
+        "sucursales sucursales sucursales"
+        "redes redes redes";
+    grid-template-rows: 1fr 2fr 3fr 3fr 1fr;
+    grid-template-columns: 20% auto 15%;
+    height: 100vh;
+    column-gap: 10px;
+    row-gap: 10px;
+}

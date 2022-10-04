@@ -1,0 +1,9 @@
+%pruebaExtendElementosNav {
+    padding: 2px 7px 2px 7px;
+    color: map-get($colores, color-linksNav);
+    border: 1px solid map-get($colores, bordercolor);
+    text-decoration: none;
+
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}

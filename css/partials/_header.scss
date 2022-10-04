@@ -1,0 +1,47 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Manrope', sans-serif;
+    background-color:map-get($colores, color-linksNav );
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    
+    #logoWeb {
+        width: 120px;
+        height: 120px;
+    }
+
+    ul{
+        @include pruebaUl($tamano: 600px, $justificacion:space-evenly)
+
+    }
+    a{
+        @extend %pruebaExtendElementosNav;
+        &:hover{
+            background-color: $backgroundcolorhover;
+            color: #ffffff;
+        }
+    }
+    
+}
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "imagenes imagenes imagenes"
+        "servicios servicios servicios"
+        "sucursales sucursales sucursales"
+        "redes redes redes";
+    grid-template-rows: 1fr 2fr 3fr 3fr 1fr;
+    grid-template-columns: 20% auto 15%;
+    height: 100vh;
+    column-gap: 10px;
+    row-gap: 10px;
+}
